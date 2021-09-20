@@ -35,7 +35,7 @@
                 <div>
                     <p class="text-center ">Anmälan Öppen förskola. </p>
                 </div>
-                <form name="contact, google-sheet" method="POST" data-netlify="true">
+                <form name="contact, google-sheet" method="POST" data-netlify="true" onSubmit="Submit" action="success.html">
                     <div id="form_alerts"></div>
                     <div class="form-group mb-3">
                         <label for="name" class="form-label">Namn</label>
@@ -62,7 +62,7 @@
                     <br>
                     <p>Läs mer om barn och familj!</p> <i> <u> <a href="https://www.svenskakyrkan.se/hagersten/barn-och-familj">Klicka här</a> </u></i>
            
-                </form>
+                </form>                      
             </div>
         </div>
     </div>
@@ -81,5 +81,6 @@
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Tyvärr gick inte din anmälan igenom</div>"))
         })
     </script>
+
 </body>
 </html>
